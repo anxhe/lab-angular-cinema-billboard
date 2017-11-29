@@ -4,8 +4,7 @@ import { MyMovieComponent } from './my-movie/my-movie.component';
 
 
 const routes:Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home',  component: MyHomeComponent },
+  { path: '',  component: MyHomeComponent },
   { path: 'movie/:id', component: MyMovieComponent }
 ];
 

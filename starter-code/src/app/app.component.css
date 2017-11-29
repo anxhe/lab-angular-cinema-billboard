@@ -1,0 +1,23 @@
+ul li{
+  list-style: none;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+}
+
+
+.movie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}

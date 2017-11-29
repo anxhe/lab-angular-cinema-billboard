@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { movies } from '../sample-movies';
+import { movies } from '../../sample-movies';
 
 @Injectable()
 
@@ -14,10 +14,6 @@ export class ServiceService {
   }
 
   getMovie(id) {
-    this.movies.forEach((movie)=>{
-      if (movie.id == id) {
-        return movie
-      }
-    })
+    return this.movies.filter(movie => movie.id == id)[0];
   }
 }

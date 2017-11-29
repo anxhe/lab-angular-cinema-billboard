@@ -1,3 +1,32 @@
-<p>
-  my-movie works!
-</p>
+<a [routerLink]="['']">Home</a>
+<ul>
+  <li>Title: {{movie.title}}</li>
+  <li><img src="{{movie.poster}}"></li>
+  <li>Synopsis: {{movie.synopsis}}</li>
+  <li>Genres: {{movie.genres}}</li>
+  <li>Year: {{movie.years}}</li>
+  <li>Director: {{movie.director}}</li>
+  <li>Actors: {{movie.actors}}</li>
+</ul>
+
+
+<!-- id: 1,
+title: "The Shawshank Redemption",
+poster: "https://i.imgur.com/SuW2ZlC.jpg",
+synopsis: "In 1947, Andy Dufresne (Tim Robbins), a banker in Maine, is convicted of murdering his wife and her lover, a golf pro. Since the state of Maine has no death...",
+genres: [
+  "Crime", "Drama"
+],
+year: 1994,
+director: "Frank Darabont",
+actors: [
+  "Tim Robbins",
+  "Morgan Freeman",
+  "Bob Gunton",
+  "William Sadler",
+  "Clancy Brown",
+  "Gil Bellows" -->
+<!-- <ul>
+  <li></li>
+  <li></li>
+</ul> -->

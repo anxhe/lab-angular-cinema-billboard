@@ -1,3 +1,10 @@
-<p>
-  my-home works!
-</p>
+<div class="movie">
+  <ul *ngFor="let e of movies">
+    <li>
+      <a (click)="viewDetails(e.id)" [routerLink]="['movie',e.id]">Name : {{e.title}}</a>
+    </li>
+    <li>
+      <img src="{{e.poster}}" alt="">
+    </li>
+  </ul>
+</div>
